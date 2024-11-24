@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn AutoConnect",
+  "version": "1.0",
+  "description": "Automate Connect Button Clicking using this Extension",
+  "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs",
+      "windows",
+      "storage"
+  ],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/linkedin.png",
+      "48": "icons/linkedin.png"
+    }
+  },
+  "icons": {
+    "16": "icons/linkedin.png",
+    "48": "icons/linkedin.png"
+  }
+}
+  
